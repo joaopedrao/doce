@@ -146,7 +146,7 @@ const Index = () => {
         <section className="mt-16 text-center">
           <div className="bg-gradient-to-r from-pink-light to-blue-light rounded-3xl p-8 border-2 border-pink-bubblegum-dark">
             <h4 className="text-2xl font-bold text-foreground mb-2">
-              Feito com amor ❤️
+              Feito com amor️!!
             </h4>
             <p className="text-muted-foreground">
               Todos os nossos produtos são preparados com ingredientes selecionados e muito carinho!
