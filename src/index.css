@@ -1,0 +1,70 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+All colors MUST be HSL.
+*/
+
+@layer base {
+  :root {
+    --background: 330 100% 98%;
+    --foreground: 330 80% 20%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 330 80% 20%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 330 80% 20%;
+
+    --primary: 330 100% 75%;
+    --primary-foreground: 330 80% 20%;
+
+    --secondary: 200 100% 85%;
+    --secondary-foreground: 200 80% 20%;
+
+    --muted: 330 60% 95%;
+    --muted-foreground: 330 40% 45%;
+
+    --accent: 200 100% 80%;
+    --accent-foreground: 200 80% 20%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 330 60% 90%;
+    --input: 330 60% 90%;
+    --ring: 330 100% 75%;
+
+    --radius: 1rem;
+
+    /* Cores customizadas para doceria */
+    --pink-bubblegum: 330 100% 85%;
+    --pink-bubblegum-dark: 330 100% 75%;
+    --sky-blue: 200 100% 85%;
+    --sky-blue-dark: 200 100% 75%;
+    --pink-light: 330 100% 95%;
+    --blue-light: 200 100% 95%;
+
+    /* Gradientes */
+    --gradient-sweet: linear-gradient(135deg, hsl(330 100% 85%), hsl(200 100% 85%));
+    --gradient-card: linear-gradient(180deg, hsl(0 0% 100%), hsl(330 100% 98%));
+    
+    /* Sombras */
+    --shadow-sweet: 0 8px 24px hsl(330 100% 75% / 0.2);
+    --shadow-hover: 0 12px 32px hsl(330 100% 75% / 0.3);
+
+    /* Animações */
+    --transition-sweet: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
